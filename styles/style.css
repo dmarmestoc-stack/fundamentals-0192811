@@ -27,7 +27,7 @@ body {
     border: 5px solid rgb(113, 198, 240);
     border-left-color: rgb(35, 127, 180);
     border-top-color:rgb(70, 211, 211); 
-   border-radius: 26%;
-   animation: rotate 1s linear infinite;
+   border-radius: 45%;
+   animation: rotate 0.01s linear infinite;
 }
 @keyframes rotate {to {transform: rotate(360deg)}}
