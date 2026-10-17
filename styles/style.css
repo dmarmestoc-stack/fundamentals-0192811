@@ -4,7 +4,7 @@
     --surface: rgb(56, 207, 212);
     --primary: rgba(43, 228, 212, 0);
     --text: rgb(255, 255, 255);
-    --muted: rgb(119, 17, 187, 0.5);
+    --muted: rgba(255, 255, 255, 0.5);
     --radius: 1rem;
 
 
@@ -42,30 +42,50 @@ a{
     text-decoration: none;
     color: inherit;
 }
+/* 2. PANTALLA DE CARGA */
+
+.loader{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--bg);
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 700ms ease, visibility 700ms ease;
+}
 .loading{
+    width: 85%;
    
-    max-width: 50%;
+    max-width: 25rem;
     line-height: 1.4;
     font-size:1.2rem ;
     font-weight:bold ;
     text-align: center;
 }
+.loading h2{
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+}
 .loading__author{
     font-weight: normal;
     font-size: 0.9rem;
-    color: rgb(253, 253, 253);
-    margin: 0.6rem 0 2rem 0;
+    color:var(--muted);
+    margin: 0.625rem;
     display: block;
 }
 .loading__animated{
     background-color: rgb(254, 253, 255);
-    width: 50px;
-    height: 35px;
+    width: 2.625rem;
+    height:2.625rem;
     display: inline-block;
     border: 5px solid rgb(113, 198, 240);
     border-left-color: rgb(35, 127, 180);
     border-top-color:rgb(70, 211, 211); 
-   border-radius: 45%;
-   animation: rotate 0.01s linear infinite;
+   border-radius: 50%;
+   animation: rotate 600ms infinite linear;
 }
-@keyframes rotate {to {transform: rotate(360deg)}}
+@keyframes rotate {to {transform: rotate(1turn)}}
