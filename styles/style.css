@@ -1,8 +1,46 @@
+/* 1.Variables y estilos globales*/
+:root{
+    --bg:rgb(15, 42, 117);
+    --surface: rgb(56, 207, 212);
+    --primary: rgba(43, 228, 212, 0);
+    --text: rgb(255, 255, 255);
+    --muted: rgb(119, 17, 187, 0.5);
+    --radius: 1rem;
+
+
+   
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Arial','Helvetica', sans-serif;
+    background-color: var(--bg);
+    color: var(--text)
+}
+.container{
+   width: 90%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+section{
+    scroll-margin-top: 5.625em;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 .loading{
    
@@ -15,7 +53,7 @@ body {
 .loading__author{
     font-weight: normal;
     font-size: 0.9rem;
-    color: rgb(119, 17, 187);
+    color: rgb(253, 253, 253);
     margin: 0.6rem 0 2rem 0;
     display: block;
 }
